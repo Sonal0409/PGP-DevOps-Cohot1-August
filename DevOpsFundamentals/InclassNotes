@@ -1,0 +1,79 @@
+Application:
+
+software that performs functions that meet the requirements
+
+Types of applications:
+
+1. Desktop Application/standalone Application
+2. WebApplication
+3. Enterprise Application 
+
+==========================================================
+Challenges in tradition - Waterfall model:
+==================================
+-> phased manner
+-> development happens for all the requirements
+-> No changes are accommodated
+-> No feedback by the client at earlier stages of the SDLC
+-> All the tasks were perfomed manually
+-> No communication between deveoper or tester or operation
+==========================================================
+Challenges in Agile or Iterative Model:
+==========================================================
+-> Deployment is done manually on a given date and time
+-> In case we wworng command executed, or script is missed then the deployment fails
+-> trouble shooting the issues for failed deployment is time taking
+-> No automation tools were used for Infra setup
+-> No communication between dev & ops 
+==========================================================
+
+DevOps Improved communication and collaboration between Dev and Ops 
+Main goal is to deliver the software at a faster rate and efficiently
+Focuses on Delivery aspect of the applications.
+
+There is no point in delivering an application that is not secure 
+
+1. Example: Broken authentication
+We deployed an application and users are able to access the app with any random username and password
+An attacker over the internet --he has a list of username and password and your application allows the user to login with a random username password
+
+Strategy to solve this: 2 factor authentication or zero trust policy or delaying repeated login attempts
+
+2. Example : Sensitive data exposure
+
+Solution: use vaults to store sensitive data 
+
+3 broken access control :
+=============================
+4. sql injections
+
+5. cross site scripting
+
+
+In addition to devOps process we should also include the approach of integrating security practices in SDLC process.
+
+Security testing :
+=================================
+Test the application to check if it is vulnerable to cyber attacks
+This testing will provide evidence that our system is safe and reliable and they do not accept unauthorized inputs
+
+As part of security testing in Dev + Security + Ops  we focus on:
+
+-> finding risks, threats, issues that will have negative impact on the application 
+
+-> Use the testing/scan results to fix the issues in the CICD process
+
+In devSecOps the main goal is to consider security testing after every phase of SDLC
+
+SCA : software Composition Analysis 
+SAST 
+DAST
+
+Source CODE --> Custom code written by Dev + third party code 
+
+SBOM -> software bill of material 
+
+SCA : software Composition Analysis 
+Scan your code and analyze and identify third party libraries and components that have issues
+
+Tools: synk, veracode, blackduck
